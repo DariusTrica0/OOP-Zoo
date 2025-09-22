@@ -29,25 +29,7 @@ A small project in C++17 that demonstrates object-oriented programming (OOP) usi
     └── main.cpp
 ```
 
-## Requirement
-- C++17 compiler (GCC/Clang/MSVC).
-- Optional: CMake ≥ 3.12 (if you choose the CMake option).
 
-## Build & Run
-
-### A — CMake (Linux/macOS/Windows)
-```bash
-mkdir build && cd build
-cmake ..
-cmake --build . --config Release
-./zoo            # pe Windows: .\Release\zoo.exe (sau .\zoo.exe)
-```
-
-### B — Makefile (Linux/macOS)
-```bash
-make
-./zoo
-```
 
 ## How it works (in short)
 - `Animal` remembers `name_` and `age_` and defines the virtual interface. It has `print(std::ostream&)`, and `operator<<` uses `print` so you can print to any stream (console, file, string).
